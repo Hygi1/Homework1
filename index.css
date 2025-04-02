@@ -10,6 +10,7 @@
 .hero-page {
   background: #e1ff8f;
   height: 800px;
+  position: relative;
 }
 .hero-page_info {
   padding-top: 196px;
@@ -141,40 +142,31 @@
   padding-bottom: 16px;
 }
 .game-image1 {
-  background-image: url(/kartinki/card1.jpg);
-  background-repeat: no-repeat;
   border-radius: 30px;
   max-width: 378px;
 }
 .game-image2 {
-  background-image: url(/kartinki/card2.jpg);
-  background-repeat: no-repeat;
   border-radius: 30px;
   max-width: 378px;
   height: 512px;
 }
 .game-image3 {
-  background-image: url(/kartinki/card3.jpg);
-  background-repeat: no-repeat;
   border-radius: 30px;
   max-width: 378px;
 }
 .game-image4 {
-  background-image: url(/kartinki/card4.jpg);
-  background-repeat: no-repeat;
   border-radius: 30px;
   max-width: 378px;
   height: 551px;
 }
 .game-image5 {
-  background-image: url(/kartinki/card5.jpg);
-  background-repeat: no-repeat;
   border-radius: 30px;
   max-width: 378px;
 }
+.game-card__img {
+  border-radius: 30px;
+}
 .game-image6 {
-  background-image: url(/kartinki/card6.jpg);
-  background-repeat: no-repeat;
   border-radius: 30px;
   max-width: 378px;
   height: 551px;
@@ -182,6 +174,42 @@
 .star1 {
   position: absolute;
   color: #bcec30;
+  right: 0;
+  top: 90px;
+}
+.Stargroup {
+  position: absolute;
+  right: 0;
+}
+.Star2 {
+  position: absolute;
+  left: 63px;
+  top: 94px;
+}
+.Star3 {
+  position: absolute;
+  left: 156px;
+  top: 69px;
+}
+.Star4 {
+  position: absolute;
+  right: 455px;
+  bottom: 255px;
+}
+.Star5 {
+  position: absolute;
+  right: 344px;
+  bottom: 149px;
+}
+.Star6 {
+  position: absolute;
+  left: 25px;
+  top: 770px;
+}
+.Star7 {
+  position: absolute;
+  left: 40px;
+  top: 822px;
 }
 .top-block {
   align-self: flex-start;
