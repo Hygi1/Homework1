@@ -1,2 +1,4 @@
-const result = 2 ** 5; // Возведение в степень (2^5 = 32)
-alert(result);
+const a = 9;
+const b = 2;
+const remainder = a % b;
+alert(remainder);
