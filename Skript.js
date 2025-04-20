@@ -1,4 +1,8 @@
-const a = 9;
-const b = 2;
-const remainder = a % b;
-alert(remainder);
+let num = 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num++;
+num--;
+alert(num);
