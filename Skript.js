@@ -1,2 +1,10 @@
-const age = prompt("Сколько вам лет?");
-alert(`Вам ${age} лет!`);
+const user = {
+  name: "Данил",
+  age: 24,
+  isAdmin: true,
+};
+
+alert(`Данные пользователя:
+  Имя: ${user.name}
+  Возраст: ${user.age}
+  Админ: ${user.isAdmin ? "Да" : "Нет"}`);
