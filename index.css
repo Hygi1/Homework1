@@ -226,6 +226,12 @@
 .game-mobail_heading {
   display: none;
 }
+.viktorina {
+  display: none;
+}
+.Vector {
+  display: none;
+}
 @media (max-width: 376px) {
   .center {
     width: 376px;
@@ -276,13 +282,11 @@
   .Star6 {
     display: none;
   }
-  .Star7 {
+  .Star5 {
     display: none;
   }
-  .game-card {
-    width: 343px;
-    height: 528px;
-    display: block;
+  .Star7 {
+    display: none;
   }
   .game-card_one {
     width: 343px;
@@ -321,6 +325,7 @@
   }
   .boxBottom {
     display: block;
+    padding-bottom: 40px;
   }
   .boxTop {
     display: block;
@@ -370,5 +375,42 @@
   }
   .dekstop-viktorina {
     display: none;
+  }
+  .viktorina {
+    display: block;
+  }
+  .footer-heading {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    align-self: center;
+    display: flex;
+    width: 190px;
+    height: 20px;
+  }
+  .footer {
+    background: #bded35;
+    width: 375px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .hero-page {
+    position: relative;
+  }
+  .Star4 {
+    right: 34px;
+    top: 625px;
+    position: absolute;
+  }
+  .Vector {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
   }
 }
