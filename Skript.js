@@ -1,6 +1,7 @@
-let a = 10;
-alert(a);
-a = 20;
-alert(a);
-const firstIPhoneYear = 2007;
-alert(firstIPhoneYear);
+const a = 10;
+const b = 2;
+alert(
+  `Сумма: ${a + b}\nРазность: ${a - b}\nПроизведение: ${a * b}\nЧастное: ${
+    a / b
+  }`
+);
