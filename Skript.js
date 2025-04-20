@@ -1,8 +1,2 @@
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num++;
-num--;
-alert(num);
+const age = prompt("Сколько вам лет?");
+alert(`Вам ${age} лет!`);
