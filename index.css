@@ -12,23 +12,23 @@
   height: 800px;
   position: relative;
 }
-.hero-page_info {
+.hero-page__info {
   padding-top: 196px;
 }
-.hero-page_heading {
+.hero-page__heading {
   font-size: 64px;
   font-weight: 700;
   letter-spacing: 0px;
   line-height: 100%;
   padding-bottom: 24px;
 }
-.hero-page_paragraph {
+.hero-page__paragraph {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
   padding-bottom: 48px;
 }
-.hero-page_button {
+.hero-page__button {
   box-sizing: border-box;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 60px;
@@ -44,7 +44,7 @@
   text-align: center;
   transition: 0.7s;
 }
-.hero-page_button:hover {
+.hero-page__button:hover {
   color: black;
   background-color: white;
 }
@@ -135,10 +135,10 @@
   justify-content: flex-end;
   background-color: white;
 }
-.card_info {
+.card__info {
   padding: 32px;
 }
-.card_info p {
+.card__info p {
   padding-bottom: 16px;
 }
 .game-image1 {
@@ -220,10 +220,10 @@
 .mobail-heading {
   display: none;
 }
-.game-mobail_button {
+.game-mobail__button {
   display: none;
 }
-.game-mobail_heading {
+.game-mobail__heading {
   display: none;
 }
 .viktorina {
@@ -244,7 +244,7 @@
     width: 376px;
     height: 700px;
   }
-  .hero-page_heading {
+  .hero-page__heading {
     font-family: Montserrat;
     font-weight: 700;
     font-size: 40px;
@@ -253,7 +253,7 @@
     text-align: center;
     vertical-align: middle;
   }
-  .hero-page_button {
+  .hero-page__button {
     font-family: Montserrat;
     font-weight: 600;
     font-size: 16px;
@@ -261,8 +261,9 @@
     letter-spacing: 0%;
     text-align: center;
     width: 285px;
+    height: 55px;
   }
-  .hero-page_paragraph {
+  .hero-page__paragraph {
     width: 296px;
     height: 60px;
     text-align: center;
@@ -295,32 +296,32 @@
   .Star7 {
     display: none;
   }
-  .game-card_one {
+  .game-card__one {
     width: 343px;
     height: 528px;
     display: block;
   }
-  .game-card_two {
+  .game-card__two {
     width: 343px;
     height: 567px;
     display: block;
   }
-  .game-card_three {
+  .game-card__three {
     width: 343px;
     height: 567px;
     display: block;
   }
-  .game-card_four {
+  .game-card__four {
     width: 343px;
     height: 528px;
     display: block;
   }
-  .game-card_five {
+  .game-card__five {
     width: 343px;
     height: 606px;
     display: block;
   }
-  .game-card_six {
+  .game-card__six {
     width: 343px;
     height: 626px;
     display: block;
@@ -354,7 +355,7 @@
     align-self: flex-start;
     padding-left: 16px;
   }
-  .game-mobail_heading {
+  .game-mobail__heading {
     font-family: Montserrat;
     font-weight: 400;
     font-size: 16px;
@@ -366,7 +367,7 @@
     padding-top: 16px;
     padding-bottom: 32px;
   }
-  .game-mobail_button {
+  .game-mobail__button {
     width: 285px;
     height: 55px;
     gap: 10px;
