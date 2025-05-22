@@ -12,23 +12,23 @@
   height: 800px;
   position: relative;
 }
-.hero-page_info {
+.hero-page__info {
   padding-top: 196px;
 }
-.hero-page_heading {
+.hero-page__heading {
   font-size: 64px;
   font-weight: 700;
   letter-spacing: 0px;
   line-height: 100%;
   padding-bottom: 24px;
 }
-.hero-page_paragraph {
+.hero-page__paragraph {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
   padding-bottom: 48px;
 }
-.hero-page_button {
+.hero-page__button {
   box-sizing: border-box;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 60px;
@@ -44,7 +44,7 @@
   text-align: center;
   transition: 0.7s;
 }
-.hero-page_button:hover {
+.hero-page__button:hover {
   color: black;
   background-color: white;
 }
@@ -53,7 +53,7 @@
   background: #202027;
 }
 
-.game_info {
+.game__info {
   font-weight: 700;
   font-size: 64px;
   line-height: 100%;
@@ -62,7 +62,7 @@
   text-decoration: none;
 }
 
-.game_info-paragraph {
+.game__info-paragraph {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
@@ -135,10 +135,10 @@
   justify-content: flex-end;
   background-color: white;
 }
-.card_info {
+.card__info {
   padding: 32px;
 }
-.card_info p {
+.card__info p {
   padding-bottom: 16px;
 }
 .game-image1 {
@@ -216,4 +216,362 @@
 }
 .block-bottom {
   align-self: flex-end;
+}
+.mobail-heading {
+  display: none;
+}
+.game-mobail__button {
+  display: none;
+}
+.game-mobail__heading {
+  display: none;
+}
+.viktorina {
+  display: none;
+}
+.Vector {
+  display: none;
+}
+.mini-games {
+  position: relative;
+  background: #202027;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  gap: 32px;
+  padding-bottom: 144px;
+}
+.Star8 {
+  position: absolute;
+  right: 45px;
+  top: 126px;
+}
+.Star9 {
+  position: absolute;
+  right: 124px;
+  top: 93px;
+}
+.Star10 {
+  position: absolute;
+  right: 52px;
+  bottom: 65px;
+}
+.Star11 {
+  position: absolute;
+  right: 150px;
+  bottom: 45px;
+}
+.mini-info {
+  height: 249px;
+  width: 504px;
+}
+.mini-games__heading {
+  padding-top: 46px;
+  padding-bottom: 72px;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
+.mini-games__one {
+  width: 1200px;
+  height: 500px;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.mini-games__two {
+  display: flex;
+  width: 1200px;
+  height: 500px;
+  border-radius: 30px;
+  background-color: white;
+}
+.mini-games__three {
+  width: 1200px;
+  height: 500px;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.mini-games__four {
+  display: flex;
+  width: 1200px;
+  height: 500px;
+  border-radius: 30px;
+  background-color: white;
+}
+.mini-games__five {
+  width: 1200px;
+  height: 500px;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.mini-games__six {
+  display: flex;
+  width: 1200px;
+  height: 500px;
+  border-radius: 30px;
+  background-color: white;
+}
+.game-heading {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  padding-bottom: 36px;
+}
+.mini__heading {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  padding-bottom: 24px;
+  padding-top: 48px;
+}
+.mini-info__right {
+  padding-left: 48px;
+}
+.game-button {
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 60px;
+  width: 247px;
+  height: 66px;
+  background-color: black;
+  color: white;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 142%;
+  letter-spacing: 0px;
+  text-align: center;
+  transition: 0.7s;
+}
+.game-mini__img {
+  border-radius: 30px;
+  width: 600px;
+  height: 500px;
+}
+.footer {
+  background: #bded35;
+  height: 150px;
+}
+.footer-heading {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 60px;
+}
+@media (max-width: 376px) {
+  .center {
+    width: 376px;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-page {
+    width: 376px;
+    height: 700px;
+  }
+  .hero-page__heading {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .hero-page__button {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 285px;
+    height: 55px;
+  }
+  .hero-page__paragraph {
+    width: 296px;
+    height: 60px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .Stargroup {
+    display: none;
+  }
+  .game__info {
+    display: none;
+  }
+  .game__info-paragraph {
+    display: none;
+  }
+  .star1 {
+    display: none;
+  }
+  .Star6 {
+    display: none;
+  }
+  .Star5 {
+    display: none;
+  }
+  .Star7 {
+    display: none;
+  }
+  .game-card__one {
+    width: 343px;
+    height: 528px;
+    display: block;
+  }
+  .game-card__two {
+    width: 343px;
+    height: 567px;
+    display: block;
+  }
+  .game-card__three {
+    width: 343px;
+    height: 567px;
+    display: block;
+  }
+  .game-card__four {
+    width: 343px;
+    height: 528px;
+    display: block;
+  }
+  .game-card__five {
+    width: 343px;
+    height: 606px;
+    display: block;
+  }
+  .game-card__six {
+    width: 343px;
+    height: 626px;
+    display: block;
+  }
+  .game-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .boxBottom {
+    display: block;
+    padding-bottom: 40px;
+  }
+  .boxTop {
+    display: block;
+  }
+  .game-number {
+    display: none;
+  }
+  .game-card__img {
+    width: 343px;
+    height: 284px;
+  }
+  .mobail-heading {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    width: 250px;
+    height: 49px;
+    color: #ffffff;
+    align-self: flex-start;
+    padding-left: 16px;
+  }
+  .game-mobail__heading {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    width: 249px;
+    height: 40px;
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+  .game-mobail__button {
+    width: 285px;
+    height: 55px;
+    gap: 10px;
+    border-radius: 60px;
+    padding-top: 16px;
+    padding-right: 28px;
+    padding-bottom: 16px;
+    padding-left: 28px;
+    border-width: 1px;
+    display: block;
+    color: white;
+    background-color: black;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .dekstop-viktorina {
+    display: none;
+  }
+  .viktorina {
+    display: block;
+  }
+  .footer-heading {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    align-self: center;
+    display: flex;
+    width: 190px;
+    height: 20px;
+  }
+  .footer {
+    background: #bded35;
+    width: 375px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .hero-page {
+    position: relative;
+  }
+  .Star4 {
+    right: 34px;
+    top: 625px;
+    position: absolute;
+  }
+  .Vector {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+  }
 }
