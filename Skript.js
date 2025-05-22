@@ -87,3 +87,7 @@ if (d > 100 || e > 100) {
 } else {
   console.log("Неверно");
 }
+
+let a = "2";
+let b = "3";
+alert(+a + +b);
