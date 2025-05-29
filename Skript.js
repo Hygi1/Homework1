@@ -124,3 +124,5 @@ for (let i = 0; i < 2; i++) {
 for (let t = 1; t <= 5; t++) {
   console.log(t);
 }
+for (let t = 7; t <= 22; t++) {
+  console.log(t);
