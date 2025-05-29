@@ -380,6 +380,9 @@
   padding-top: 60px;
 }
 @media (max-width: 376px) {
+  .mini-games {
+    display: none;
+  }
   .center {
     width: 376px;
     margin: 0;

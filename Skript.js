@@ -1,4 +1,4 @@
-let a = 10;
+/* let a = 10;
 alert(a);
 a = 20;
 alert(a);
@@ -117,4 +117,7 @@ switch (monthNumber) {
     break;
   default:
     console.log("Ошибка");
+}  */
+for (let i = 0; i < 2; i++) {
+  console.log("Привет");
 }
