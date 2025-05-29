@@ -137,7 +137,7 @@ for (let key in obj) {
   console.log(`${key} — зарплата ${obj[key]} долларов`);
 }
 let n = 1000;
-let num = 0; // Счётчик итераций
+let num = 0;
 
 while (n >= 50) {
   n = n / 2;
@@ -146,3 +146,9 @@ while (n >= 50) {
 
 console.log("Итоговое число:", n);
 console.log("Количество итераций:", num);
+
+const firstFriday = 5;
+
+for (let day = firstFriday; day <= 31; day += 7) {
+  console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
+}
