@@ -121,3 +121,6 @@ switch (monthNumber) {
 for (let i = 0; i < 2; i++) {
   console.log("Привет");
 }
+for (let t = 1; t <= 5; t++) {
+  console.log(t);
+}
