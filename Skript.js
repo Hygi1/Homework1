@@ -126,3 +126,13 @@ for (let t = 1; t <= 5; t++) {
 }
 for (let t = 7; t <= 22; t++) {
   console.log(t);
+}
+const obj = {
+  Коля: "200",
+  Вася: "300",
+  Петя: "400",
+};
+
+for (let key in obj) {
+  console.log(`${key} — зарплата ${obj[key]} долларов`);
+}
