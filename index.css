@@ -360,6 +360,11 @@
   text-align: center;
   transition: 0.7s;
 }
+.game-button:hover {
+  color: black;
+  background-color: white;
+}
+
 .game-mini__img {
   border-radius: 30px;
   width: 600px;

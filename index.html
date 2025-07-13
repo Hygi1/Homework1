@@ -14,7 +14,7 @@
     <title>hw1</title>
   </head>
   <body>
-    <script src="Skript.js"></script>
+    <script src="OneGame.js"></script>
     <div class="hero-page">
       <img class="Stargroup" src="/kartinki/Stargroup.svg" alt="Stargroup" />
       <img class="Star2" src="/kartinki/Star2.svg" alt="Star2" />
@@ -62,7 +62,9 @@
                   <h2 class="game-mobail__heading">
                     Попробуй угадать случайное число от 1 до 100.
                   </h2>
-                  <button class="game-mobail__button">Играть</button>
+                  <button onclick="startGame()" class="game-mobail__button">
+                    Играть
+                  </button>
                 </section>
               </div></a
             >
@@ -174,7 +176,7 @@
             Попробуй угадать случайное<br />
             число от 1 до 100.
           </h2>
-          <button class="game-button">Играть</button>
+          <button onclick="startGame()" class="game-button">Играть</button>
         </section>
       </div>
       <div class="mini-games__two">
