@@ -1,44 +1,9 @@
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+const array = [1, 5, 4, 10, 0, 3];
 
-function generateOperation() {
-  const operations = ["+", "-", "*", "/"];
-  return operations[getRandomInt(0, 3)];
-}
-
-function mathQuiz() {
-  const num1 = getRandomInt(1, 20);
-  const num2 = getRandomInt(1, 20);
-  const operation = generateOperation();
-
-  let expression = `${num1} ${operation} ${num2}`;
-
-  let correctAnswer;
-  switch (operation) {
-    case "+":
-      correctAnswer = num1 + num2;
-      break;
-    case "-":
-      correctAnswer = num1 - num2;
-      break;
-    case "*":
-      correctAnswer = num1 * num2;
-      break;
-    case "/":
-      correctAnswer = Math.floor(num1 / num2);
-      break;
+for (let i = 0; i < array.length; i++) {
+  if (array[i] === 10) {
+    console.log(array[i]);
+    break;
   }
-
-  const userAnswer = prompt(`Решите пример: ${expression}`);
-
-  if (userAnswer === null) {
-    alert("Операция отменена");
-  } else if (parseInt(userAnswer) === correctAnswer) {
-    alert("Правильно! 🎉");
-  } else {
-    alert(`Неверно! Правильный ответ: ${correctAnswer}`);
-  }
+  console.log(array[i]);
 }
-
-mathQuiz();
