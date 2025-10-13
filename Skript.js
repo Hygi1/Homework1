@@ -1,22 +1,29 @@
-function getSquares(arr) {
-  if (!Array.isArray(arr)) {
+function getWordLengths(wordsArray) {
+  if (!Array.isArray(wordsArray)) {
     throw new Error("Входной параметр должен быть массивом");
   }
 
-  const result = [];
+  const lengths = [];
 
-  for (let i = 0; i < arr.length; i++) {
-    if (typeof arr[i] !== "number") {
-      throw new Error("Все элементы массива должны быть числами");
+  for (let i = 0; i < wordsArray.length; i++) {
+    if (typeof wordsArray[i] !== "string") {
+      throw new Error("Все элементы массива должны быть строками");
     }
 
-    result.push(arr[i] * arr[i]);
+    lengths.push(wordsArray[i].length);
   }
 
-  return result;
+  return lengths;
+}
+
+function getWordLengthsMap(wordsArray) {
+  return wordsArray.map((word) => word.length);
 }
 
 // Пример использования:
-const numbers = [1, 2, 3, 4, 5];
-const squares = getSquares(numbers);
-console.log(squares);
+const words = ["привет", "мир", "javascript", "функция"];
+const lengths = getWordLengths(words);
+console.log(lengths);
+
+const lengthsMap = getWordLengthsMap(words);
+console.log(lengthsMap);
