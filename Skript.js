@@ -1,29 +1,31 @@
-function getWordLengths(wordsArray) {
-  if (!Array.isArray(wordsArray)) {
+function getNegativeNumbers(numbersArray) {
+  if (!Array.isArray(numbersArray)) {
     throw new Error("Входной параметр должен быть массивом");
   }
 
-  const lengths = [];
+  const negativeNumbers = [];
 
-  for (let i = 0; i < wordsArray.length; i++) {
-    if (typeof wordsArray[i] !== "string") {
-      throw new Error("Все элементы массива должны быть строками");
+  for (let i = 0; i < numbersArray.length; i++) {
+    if (typeof numbersArray[i] !== "number") {
+      throw new Error("Все элементы массива должны быть числами");
     }
 
-    lengths.push(wordsArray[i].length);
+    if (numbersArray[i] < 0) {
+      negativeNumbers.push(numbersArray[i]);
+    }
   }
 
-  return lengths;
+  return negativeNumbers;
 }
 
-function getWordLengthsMap(wordsArray) {
-  return wordsArray.map((word) => word.length);
+function getNegativeNumbersFilter(numbersArray) {
+  return numbersArray.filter((num) => num < 0);
 }
 
 // Пример использования:
-const words = ["привет", "мир", "javascript", "функция"];
-const lengths = getWordLengths(words);
-console.log(lengths);
+const numbers = [1, -2, 3, -4, 5, -6, 7, 8, -9];
+const negatives = getNegativeNumbers(numbers);
+console.log(negatives);
 
-const lengthsMap = getWordLengthsMap(words);
-console.log(lengthsMap);
+const negativesFilter = getNegativeNumbersFilter(numbers);
+console.log(negativesFilter);
