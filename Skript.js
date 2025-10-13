@@ -1,31 +1,12 @@
-function getNegativeNumbers(numbersArray) {
-  if (!Array.isArray(numbersArray)) {
-    throw new Error("Входной параметр должен быть массивом");
-  }
+const randomArray = Array.from({ length: 10 }, () =>
+  Math.floor(Math.random() * 11)
+);
 
-  const negativeNumbers = [];
-
-  for (let i = 0; i < numbersArray.length; i++) {
-    if (typeof numbersArray[i] !== "number") {
-      throw new Error("Все элементы массива должны быть числами");
-    }
-
-    if (numbersArray[i] < 0) {
-      negativeNumbers.push(numbersArray[i]);
-    }
-  }
-
-  return negativeNumbers;
+function getEvenNumbers(arr) {
+  return arr.filter((num) => num % 2 === 0);
 }
 
-function getNegativeNumbersFilter(numbersArray) {
-  return numbersArray.filter((num) => num < 0);
-}
+const evenNumbers = getEvenNumbers(randomArray);
 
-// Пример использования:
-const numbers = [1, -2, 3, -4, 5, -6, 7, 8, -9];
-const negatives = getNegativeNumbers(numbers);
-console.log(negatives);
-
-const negativesFilter = getNegativeNumbersFilter(numbers);
-console.log(negativesFilter);
+console.log("Исходный массив:", randomArray);
+console.log("Массив четных чисел:", evenNumbers);
