@@ -1,15 +1,22 @@
-const numbers = [
-  Math.floor(Math.random() * 10) + 1,
-  Math.floor(Math.random() * 10) + 1,
-  Math.floor(Math.random() * 10) + 1,
-  Math.floor(Math.random() * 10) + 1,
-  Math.floor(Math.random() * 10) + 1,
-];
+function getSquares(arr) {
+  if (!Array.isArray(arr)) {
+    throw new Error("Входной параметр должен быть массивом");
+  }
 
-console.log("Исходный массив:", numbers);
+  const result = [];
 
-for (let i = 0; i < numbers.length - 1; i++) {
-  const sum = numbers[i] + numbers[i + 1];
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] !== "number") {
+      throw new Error("Все элементы массива должны быть числами");
+    }
 
-  console.log(`Сумма элементов ${numbers[i]} и ${numbers[i + 1]} = ${sum}`);
+    result.push(arr[i] * arr[i]);
+  }
+
+  return result;
 }
+
+// Пример использования:
+const numbers = [1, 2, 3, 4, 5];
+const squares = getSquares(numbers);
+console.log(squares);
