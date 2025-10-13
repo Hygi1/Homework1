@@ -1,14 +1,6 @@
-const rows = 3;
-const cols = 3;
+const array = [1, 1, 1];
+const newElements = [2, 2, 2];
 
-const matrix = [];
+array.push(...newElements);
 
-for (let i = 0; i < rows; i++) {
-  matrix[i] = [];
-
-  for (let j = 0; j < cols; j++) {
-    matrix[i][j] = 1;
-  }
-}
-
-console.log(JSON.stringify(matrix, null, 2));
+console.log(array);
