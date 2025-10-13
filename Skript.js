@@ -1,7 +1,15 @@
-const array = [9, 8, 7, "a", 6, 5];
+const numbers = [9, 8, 7, 6, 5];
 
-const result = array
-  .filter((item) => typeof item === "number")
-  .sort((a, b) => a - b);
+const userInput = prompt("Угадайте число из массива (от 5 до 9):");
 
-console.log(result);
+if (userInput === null) {
+  alert("Вы отменили игру");
+} else {
+  const userNumber = parseInt(userInput, 10);
+
+  if (numbers.includes(userNumber)) {
+    alert("Угадал!");
+  } else {
+    alert("Не угадал");
+  }
+}
