@@ -1,6 +1,7 @@
-const array = [1, 1, 1];
-const newElements = [2, 2, 2];
+const array = [9, 8, 7, "a", 6, 5];
 
-array.push(...newElements);
+const result = array
+  .filter((item) => typeof item === "number")
+  .sort((a, b) => a - b);
 
-console.log(array);
+console.log(result);
