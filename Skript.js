@@ -218,3 +218,131 @@
 
 // console.log("Исходный массив:", randomArray);
 // console.log("Среднее арифметическое:", average.toFixed(2));
+
+// Задача 1  Встроенные объекты
+
+// const str = 'js';
+// const upperStr = str.toUpperCase();
+// console.log(upperStr); // Выведет: JS
+
+// Задача 2  Встроенные объекты
+
+// function filterByPrefix(arr, prefix) {
+
+//   if (!Array.isArray(arr) || typeof prefix !== 'string') {
+//     return [];
+//   }
+
+//   const lowerPrefix = prefix.toLowerCase();
+
+//   return arr.filter(item => {
+
+//     if (typeof item !== 'string' || item.length === 0) {
+//       return false;
+//     }
+
+//     return item.toLowerCase().startsWith(lowerPrefix);
+//   });
+// }
+
+// Задача 3  Встроенные объекты
+
+// Math.floor(32.58884);
+// Math.ceil(32.58884);
+// Math.round(32.58884);
+
+// Задача 4  Встроенные объекты
+
+// const numbers = [52, 53, 49, 77, 21, 32];
+
+// const min = Math.min(...numbers);
+// const max = Math.max(...numbers);
+
+// console.log('Минимальное значение:', min);
+// console.log('Максимальное значение:', max);
+
+// Задача 5  Встроенные объекты
+
+// function printRandomNumber() {
+//   const randomNum = Math.floor(Math.random() * 10) + 1;
+//   console.log(randomNum);
+// }
+
+// printRandomNumber();
+
+// Задача 6  Встроенные объекты
+
+// function generateRandomArray(n) {
+//   if (typeof n !== "number" || !Number.isInteger(n) || n <= 0) {
+//     throw new Error("Аргумент должен быть положительным целым числом");
+//   }
+
+//   const length = Math.floor(n / 2);
+
+//   const randomArray = [];
+//   for (let i = 0; i < length; i++) {
+//     const randomNum = Math.floor(Math.random() * (n + 1));
+//     randomArray.push(randomNum);
+//   }
+
+//   return randomArray;
+// }
+
+// Задача 7  Встроенные объекты
+
+// function getRandomInRange(min, max) {
+//   if (typeof min !== "number" || typeof max !== "number") {
+//     throw new Error("Аргументы должны быть числами");
+//   }
+//   if (!Number.isInteger(min) || !Number.isInteger(max)) {
+//     throw new Error("Аргументы должны быть целыми числами");
+//   }
+//   if (min > max) {
+//     throw new Error("Минимальное значение не может быть больше максимального");
+//   }
+
+//   min = Math.ceil(min);
+//   max = Math.floor(max);
+
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// Задача 8  Встроенные объекты
+
+// const now = new Date();
+// console.log(now);
+
+// Задача 9  Встроенные объекты
+
+// const currentDate = new Date();
+// const futureDate = new Date(currentDate);
+// futureDate.setDate(currentDate.getDate() + 73);
+
+// console.log('Текущая дата:', currentDate.toLocaleDateString());
+// console.log('Дата через 73 дня:', futureDate.toLocaleDateString());
+
+// Задача 10  Встроенные объекты
+
+// function formatDate(date) {
+
+//   const months = [
+//     'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+//     'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'
+//   ];
+
+//   const weekdays = [
+//     'воскресенье', 'понедельник', 'вторник', 'среда',
+//     'четверг', 'пятница', 'суббота'
+//   ];
+
+//   const day = date.getDate();
+//   const monthIndex = date.getMonth();
+//   const year = date.getFullYear();
+//   const weekdayIndex = date.getDay();
+
+//   const hours = String(date.getHours()).padStart(2, '0');
+//   const minutes = String(date.getMinutes()).padStart(2, '0');
+//   const seconds = String(date.getSeconds()).padStart(2, '0');
+
+//   return `Дата: ${day} ${months[monthIndex]} ${year} — это ${weekdays[weekdayIndex]}.\nВремя: ${hours}:${minutes}:${seconds}`;
+// }
