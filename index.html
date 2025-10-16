@@ -14,6 +14,9 @@
     <title>hw1</title>
   </head>
   <body>
+    <script src="FourGame.js"></script>
+    <script src="ThreeGame.js"></script>
+    <script src="TwoGame.js"></script>
     <script src="OneGame.js"></script>
     <script src="Skript.js"></script>
     <div class="hero-page">
@@ -82,7 +85,9 @@
                   <h2 class="game-mobail__heading">
                     Попробуй решить простые арифметические задачи.
                   </h2>
-                  <button class="game-mobail__button">Играть</button>
+                  <button onclick="mathQuiz()" class="game-mobail__button">
+                    Играть
+                  </button>
                 </section>
               </div></a
             >
@@ -99,7 +104,9 @@
                   <h2 class="game-mobail__heading">
                     Попробуй ввести текст, который будет перевернут.
                   </h2>
-                  <button class="game-mobail__button">Играть</button>
+                  <button onclick="flipTextGame()" class="game-mobail__button">
+                    Играть
+                  </button>
                 </section>
               </div></a
             >
@@ -136,7 +143,9 @@
                   <h2 class="game-mobail__heading">
                     Отвечай на вопросы викторины с вариантами ответов.
                   </h2>
-                  <button class="game-mobail__button">Играть</button>
+                  <button onclick="startQuiz()" class="game-mobail__button">
+                    Играть
+                  </button>
                 </section>
               </div></a
             >
@@ -187,7 +196,7 @@
           <h2 class="game-heading">
             Попробуй решить простые арифметические задачи.
           </h2>
-          <button class="game-button">Играть</button>
+          <button onclick="mathQuiz()" class="game-button">Играть</button>
         </section>
       </div>
       <div id="game3" class="mini-games__three">
@@ -197,7 +206,7 @@
           <h2 class="game-heading">
             Попробуй ввести текст, который будет перевернут.
           </h2>
-          <button class="game-button">Играть</button>
+          <button onclick="flipTextGame()" class="game-button">Играть</button>
         </section>
       </div>
       <div id="game4" class="mini-games__four">
@@ -217,7 +226,7 @@
           <h2 class="game-heading">
             Отвечай на вопросы викторины с вариантами ответов.
           </h2>
-          <button class="game-button">Играть</button>
+          <button onclick="startQuiz()" class="game-button">Играть</button>
         </section>
       </div>
       <div id="game6" class="mini-games__six">
