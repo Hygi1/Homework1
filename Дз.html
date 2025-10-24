@@ -132,6 +132,50 @@
             console.log("Скрипт инициализирован. Кнопка готова к работе.");
           });
         </script>
+
+        <p class="description">
+          Первый абзац с классом description (будет удалён)
+        </p>
+        <p class="description">Второй абзац с классом description</p>
+
+        <p>Обычный абзац без класса</p>
+
+        <p class="description">Третий абзац с классом description</p>
+
+        <button id="removeButton">
+          Удалить первый элемент с классом description
+        </button>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const removeButton = document.querySelector("#removeButton");
+
+            if (!removeButton) {
+              console.error('Кнопка с id="removeButton" не найдена!');
+              return;
+            }
+
+            removeButton.addEventListener("click", function () {
+              const targetElement = document.querySelector(".description");
+
+              if (!targetElement) {
+                console.warn('Элемент с классом "description" не найден!');
+                alert("Нет элементов с классом description для удаления.");
+                return;
+              }
+
+              targetElement.remove();
+
+              console.log("Элемент удалён:", targetElement);
+              console.log(
+                "Осталось элементов .description:",
+                document.querySelectorAll(".description").length
+              );
+            });
+
+            console.log("Скрипт инициализирован. Кнопка готова к работе.");
+          });
+        </script>
       </header>
     </body>
   </head>
