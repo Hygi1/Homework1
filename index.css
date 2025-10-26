@@ -47,6 +47,45 @@
   text-decoration: none;
   padding-top: 16px;
 }
+
+.scroll-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  height: 90px;
+  overflow: hidden;
+  position: relative;
+  background-color: #bcec30;
+}
+
+.scroll-container {
+  display: flex;
+  width: calc(100% * 3);
+  animation: scrollLeft 20s linear infinite;
+  gap: 10px;
+  background-color: #bcec30;
+}
+
+.item {
+  padding-left: 51px;
+  padding-right: 51px;
+  line-height: 90px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  background-color: #bcec30;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .hero-page__button:hover {
   color: black;
   background-color: white;
@@ -587,5 +626,32 @@
     right: 0;
     top: 0;
     display: block;
+  }
+  .item {
+    font-size: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 18px;
+    width: auto;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 16px;
+  }
+  .scroll-container {
+    gap: 6px;
+    animation: scrollLeft 20s linear infinite;
+    width: calc(100% * 2);
+    align-items: center;
+  }
+  .scroll-wrapper {
+    height: 51px;
+    overflow: hidden;
+  }
+  .scroll-container img {
+    width: 19px;
+    height: 19px;
+    align-self: center;
   }
 }
