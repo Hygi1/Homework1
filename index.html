@@ -38,6 +38,64 @@
         <a href="#game" class="hero-page__button">Поехали!</a>
       </section>
     </div>
+    <div class="scroll-wrapper">
+      <div class="scroll-container">
+        <div class="item">ВИКТОРИНА</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+        <div class="item">УГАДАЙ ЧИСЛО</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+        <div class="item">ПЕРЕВЕРНИ ТЕКСТ</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+        <div class="item">ПРОСТАЯ АРИФМЕТИКА</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+        <div class="item">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+        <div class="item">ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+
+        <div class="item">ВИКТОРИНА</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+        <div class="item">УГАДАЙ ЧИСЛО</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+        <div class="item">ПЕРЕВЕРНИ ТЕКСТ</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+        <div class="item">ПРОСТАЯ АРИФМЕТИКА</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+        <div class="item">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+        <div class="item">ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+
+        <div class="item">ВИКТОРИНА</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+        <div class="item">УГАДАЙ ЧИСЛО</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+        <div class="item">ПЕРЕВЕРНИ ТЕКСТ</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+        <div class="item">ПРОСТАЯ АРИФМЕТИКА</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+        <div class="item">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+        <div class="item">ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</div>
+        <img src="/kartinki/Star.svg" alt="Star" />
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const container = document.querySelector(".scroll-container");
+        const wrapper = document.querySelector(".scroll-wrapper");
+
+        function updateScroll() {
+          const width = wrapper.clientWidth;
+          container.style.width =
+            width * (window.innerWidth <= 376 ? 2 : 3) + "px";
+        }
+
+        window.addEventListener("resize", updateScroll);
+        updateScroll();
+      });
+    </script>
     <div class="game-bg">
       <div class="game center">
         <img class="star1" src="/kartinki/Star1.svg" alt="star" />
